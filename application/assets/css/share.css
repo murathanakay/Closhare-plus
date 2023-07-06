@@ -1,0 +1,207 @@
+.dir_ex{
+    z-index:4;
+    position: relative;
+    padding: 5px;
+    margin:10px 0;
+    background: #B2CDFB;
+    color: #FFF;
+    line-height: 24px;
+    cursor: default;
+    height: 24px;
+    font-weight: bold;
+}
+.dir_ex .fltrt{
+    color: #4285F4;
+    line-height: 24px;
+    margin: 0;
+}
+.dir_ex i.fo, .dir_ex .sfo{
+
+    margin-right: 10px;
+    font-size: 24px;
+    text-shadow: 1px 0 0 #E0EBFD;
+}
+.dir_ex .sfo{
+    font-size: 15px;
+}
+.dir_ex .sfo a{
+    margin-right: 10px;
+}
+.sharebox{
+    position: absolute;
+    z-index: 3;
+    left: -1px;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    border: 1px solid #C4CDE0;
+    opacity: 0.5;
+    border-radius: 3px
+}
+#share_box .sharebox{
+    position: relative
+}
+.preview .sharebox{
+    background-color: #fff;
+}
+#share_box{
+    min-height: 50px;
+}
+li.sharing .sharebox, #share_box .sharebox{
+    opacity: 1
+}
+#share_box .sharebox.linear{
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+    width: 100%
+}
+.sharebox li.item{
+/*    background-color: #FFF;*/
+    min-height: 150px;
+    position: relative;
+    padding-bottom: 15px;
+}
+#share_box .sharebox{
+    border: none
+}
+#share_box .sharebox .btn{
+    position: absolute;
+}
+#share_box .sharebox.linear .btn{
+/*    position: relative;*/
+    float: left;
+    margin-right: 5px;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+/*fix audio li item on sharing*/
+.sharebox li.item.audio .thumbnail{
+    padding-top: 60px;
+}
+
+.sharebox li.span12.active{
+    margin-left: 0 !important;
+}
+.sharebox img{
+    /*   display: none;*/
+}
+.sharebox img.active{
+    margin: 0;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    max-width : 100%;
+}
+.sharebox .thumbnail{
+    border-radius: 0;
+    text-align: center;
+}
+.thumbnail .caption{
+    word-break: break-all;
+    color: #999;
+}
+.vibtn{
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    display: block;
+}
+.sharebox li.item:before{
+    font-family: "FontAwesome";
+    text-align: center;
+    display: inline-block;
+    line-height: 100%;
+    width: 100%;
+    top: 20px;
+    position: absolute;
+    font-size: 100px;
+    color: #FAFAFA;
+}
+.sharebox li.item.other:before{
+    content: "\f187";
+}
+.sharebox li.item.image:before{
+    content: "\f03e";
+}
+.sharebox li.item.video:before{
+    content: "\f008";
+}
+.sharebox li.item.audio:before{
+    content: "\f001";
+}
+.sharebox li.item.document:before{
+    content: "\f02d";
+}
+.sharebox li.item:after{
+    content: "";
+}
+.download {
+    width: 100%;
+    position: relative;
+    min-height: 150px;
+}
+.shareme{
+    position: absolute; 
+    background: url(../img/social-sprite.png) no-repeat;
+    background-position: -345px -71px;
+    top: 50%;
+    z-index: 9;
+    left: 50%;
+    height: 34px;
+    width: 34px;
+    margin-left: -17px;
+    margin-top: -17px;
+    display: block;
+    cursor: default;
+    font-size: 24px;
+    color: #eee;
+    text-align: center;
+    line-height: 32px;
+    text-shadow: 0 -1px 0 #666;
+}
+#share_box .sharebox.linear .shareme{
+    display: none;
+}
+.audio .shareme{
+    background-color: #FAFAFA;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.shareme a.btn>i{
+    font-size: 14px;
+}
+.sharebox .social{
+    background: url(../img/social-sprite.png) no-repeat;
+    width: 49px;
+    height: 48px;
+}
+.sharebox .social.facebook{
+    background-position: -6px -4px
+}
+.sharebox .social.twitter{
+    background-position: -142px -4px
+}
+.sharebox .social.linkedin{
+    background-position: -74px -4px
+}
+.sharebox .social.linkedin{
+    background-position: -74px -4px
+}
+.sharebox .social.pinterest{
+    background-position: -346px -4px
+}
+.sharebox .social.googleplus{
+    background-position: -210px -4px
+}
+.sharebox .social.tumblr{
+    background-position: -74px -72px
+}
+.sharebox .social.email{
+    background-position: -278px -4px
+}
+.sharebox .close{
+    font-size: 16px;
+    margin-right: 4px;
+    margin-top: 4px
+}

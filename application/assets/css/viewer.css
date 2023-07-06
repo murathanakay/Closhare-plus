@@ -1,0 +1,359 @@
+/*
+############### Vobox Viewer @nedo #################################################################################################################################################################################################################################################################################################*/
+#vobox-overlay img {
+    border: none!important;
+}
+#vobox-overlay {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1049 !important;   
+}
+#vobox-container {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+#vobox-slider {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    white-space: nowrap;
+    position: absolute;
+    display: none;
+}
+
+#vobox-slider .slide {
+    /*background: url("../img/loading32x32b.gif") no-repeat center center;*/
+    height: 100%;
+    width: 100%;
+    /*line-height: 1px;*/
+    text-align: center;
+    display: inline-block;
+}
+
+#vobox-slider .slide:before {
+    content: "";
+    display: inline-block;
+    height: 50%;
+    width: 1px;
+    margin-right: -1px;
+}
+#vobox-slider .slide .om,
+#vobox-slider .slide img,
+#vobox-slider .slide .vobox-video-container,
+#vobox-slider .slide .viewer_frame,
+#vobox-slider .slide .viewer_frame .indicator{
+    display: inline-block;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    /*width: auto;*/
+    height: auto;
+    vertical-align: middle;
+    float: none;
+}
+#vobox-slider .slide .viewer_frame{
+    padding: 0;
+    margin-top: 40px;
+    background-color: #D1D1D1;
+}
+#vobox-slider .slide .viewer_frame iframe{
+    width: 100%;
+}
+#vobox-slider .slide .viewer_frame .indicator{
+    z-index:10000;
+    position: absolute;
+    left: 50%; 
+    margin-left: -60px;
+    top: 50%; 
+    margin-top: -60px;
+    width: 120px;
+    height: 120px;
+    vertical-align: bottom;
+    background-color: #89C43C;
+    border-radius: 4px;
+}
+
+#vobox-slider .slide .viewer_frame .indicator span{
+    margin: 60px auto;
+}
+#vobox-slider .slide .om{
+    position: absolute;
+    z-index: 1051;
+}
+#vobox-slider .slide .vobox-video-container {
+    background:none;
+    max-width: 1140px;
+    max-height: 100%;
+    width: 100%;
+    padding:5%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+#vobox-slider .slide .vobox-video-container .vobox-video{
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+#vobox-slider .slide .vobox-video-container .vobox-video iframe{
+    width: 100%!important; 
+    height: 100%!important;
+    position: absolute;
+    top: 0; left: 0;
+}
+#vobox-action, #vobox-caption {
+    position: absolute;
+    left: 0;
+    z-index: 1051;
+    height: 50px;
+    width: 100%;
+}
+#vobox-action {
+    bottom: -50px;
+}
+#vobox-action.visible-bars {
+    bottom: 0;
+}
+
+#vobox-action.force-visible-bars {
+    bottom: 0!important;
+}
+
+#vobox-caption {
+    top: -50px;
+    text-align: center;
+    font-size: 14px;
+}
+#vobox-caption .nav{
+    height: 50px;
+    /*overflow: hidden;*/
+    margin: 0 0;
+    padding: 0 0;
+}
+#vobox-title{
+    word-break: break-all;
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    cursor: default;
+    text-overflow:ellipsis;
+    text-align: left;
+}
+#vobox-title .icon{
+    font-size: 18px;
+    margin-right: 10px;
+    vertical-align: middle
+}
+#vobox-caption .midaction{
+    width: 250px;
+    left: 50%; 
+    margin-left: -125px; 
+    position: absolute;
+    text-align: center;
+}
+#vobox-caption ul>li{
+    float: none;
+    display: inline-block;
+}
+#vobox-caption ul>li a{
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    cursor: default;
+    vertical-align: top;
+}
+#vobox-caption ul>li a:hover, #vobox-caption ul>li a:active{
+    background-color: #333;
+}
+#vobox-caption li{
+    line-height: 50px;
+}
+#vobox-caption .actions{
+    margin-right: 20px;
+    display: block;
+}
+#vobox-caption .actions a i{
+    font-size: 24px;
+}
+
+#vobox-caption.visible-bars {
+    top: 0;
+}
+
+#vobox-caption.force-visible-bars {
+    top: 0!important;
+}
+#vobox-close {
+    background: none;
+    left: 0px;
+    position: relative;
+    float: right;
+}
+
+.vobox-prev-container, .vobox-next-container{
+    height: 90px;
+    margin-bottom: auto;
+    margin-top: auto;
+    z-index: 5;    
+    left: 17px;
+    position: absolute;
+    bottom: 80px;
+    top: 80px;    
+}
+.vobox-next-container{
+    left: auto;
+    right: 57px
+}
+.vobox-prev-container #vobox-prev, .vobox-next-container #vobox-next{
+    background: #000 url(../img/glyphicons-halflings-white.png) no-repeat -421px -64px;
+    border-radius: 3px;
+    height: 30px;
+    margin-top: -15px;
+    opacity: 0.8;
+    position: absolute;
+    top: 50%;
+    width: 39px;    
+    text-align: center;
+    display: inline-block;
+    line-height: 30px;
+    font-size: 20px;
+}
+.vobox-next-container #vobox-next{
+    background-position: -442px -64px;
+}
+.vobox-baseline{
+    background-color: #121212;
+    bottom: 0;
+    color: #fff;
+    font-size: 0;
+    height: 0;
+    position: absolute;
+    transition: height 0.218s ease-out 0s;
+    width: 100%;
+    z-index: 4;
+}
+.vobox-count-container, .vobox-description-container{
+    height: 25px;
+    position: absolute;
+    z-index: 1;
+    left: 12px;
+    bottom: 12px;
+}
+.vobox-description-container{
+    left: auto;
+    right: 12px;
+}
+.vobox-count-container #vobox-count, .vobox-description-container #vobox-description{
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 11px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 13px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+}
+.vobox-prev-container #vobox-prev.disabled,
+.vobox-next-container #vobox-next.disabled {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    opacity: 0.3;
+}
+
+#vobox-slider.rightSpring {
+    -moz-animation: rightSpring 0.3s;
+    -webkit-animation: rightSpring 0.3s;
+}
+
+#vobox-slider.leftSpring {
+    -moz-animation: leftSpring 0.3s;
+    -webkit-animation: leftSpring 0.3s;
+}
+
+@-moz-keyframes rightSpring {
+    0% {
+        margin-left: 0px;
+    }
+
+    50% {
+        margin-left: -30px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@-moz-keyframes leftSpring {
+    0% {
+        margin-left: 0px;
+    }
+
+    50% {
+        margin-left: 30px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@-webkit-keyframes rightSpring {
+    0% {
+        margin-left: 0px;
+    }
+
+    50% {
+        margin-left: -30px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@-webkit-keyframes leftSpring {
+    0% {
+        margin-left: 0px;
+    }
+
+    50% {
+        margin-left: 30px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+#vobox-overlay {
+    background: #0d0d0d;
+    background: rgba(0,0,0,0.84);
+}
+
+#vobox-action, #vobox-caption {
+    text-shadow: 1px 1px 1px black;
+    background-color: #141414;
+}
+
+#vobox-action {
+    border-top: 2px solid rgba(0, 0, 0, 0.68);
+}
+
+#vobox-caption {
+    color: white;
+    line-height: 43px;
+    font-family: Helvetica, Arial, sans-serif;
+    border: none;
+    border-radius: 0;
+}

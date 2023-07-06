@@ -1,0 +1,662 @@
+    
+@media (min-width: 768px) {
+    html, body{
+        height: 100%;
+        overflow: hidden
+    }
+    #wrap.wide #topActionButtons .navbar-toggle{
+        display: none !important;
+    }    
+
+    #wrap.wide #topActionButtons .navbar-collapse.collapse{
+        display: block !important;
+    }
+
+    #wrap.medium #topActionButtons .actions.open .fr.dropdown-menu li:first-child a{
+    }
+
+    #topActionButtons .actions.open ul li{
+        float: left;
+        margin-left: 2px;
+        width: auto;
+    }
+}
+@media (max-width: 1080px) {
+
+    #wrap{
+        margin-left: 250px;
+        overflow: visible;
+        height: 100%;
+        min-height: 100%;
+    }
+    
+    #page.open #totalItemsNumber{
+        display: none;
+    }
+
+    #topActionButtons .navbar-toggle{
+        margin-top: 0;
+        font-size: 18px;
+    }
+    
+
+    #topActionButtons .navbar-collapse.collapse{
+        display: none !important;
+    }
+
+    #topActionButtons .actions.open .navbar-collapse.collapse{
+        display: block !important;
+    }    
+
+    #topActionButtons .actions.open .fr.dropdown-menu{
+        margin-left: 0;
+        width: 100%;
+        margin-top: 0;
+        border-left: 0;
+        background-color: #3075DD;
+        border: 0;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+        display: block !important;
+    }
+
+    #topActionButtons .actions.open ul li.lld{
+        border: none;
+    }
+    #topActionButtons .actions.open ul li.ml39{
+        margin-left: 0 !important
+    }
+    #topActionButtons .actions.open ul li.lld .btn{
+        padding-top: 4px;
+        padding-bottom: 4px;  
+        text-align: left;
+    }
+
+
+    #wrap.medium #topActionButtons .fr .btn, #wrap.small #topActionButtons .fr .btn, #wrap.medium #topActionButtons .fr .btn-group, #wrap.small #topActionButtons .fr .btn-group{
+        display: block;
+        text-align: left;
+    }
+
+    #wrap.medium #topActionButtons .fr .btn, #wrap.small #topActionButtons .fr .btn-group .btn {
+        display: inline-block;
+    }
+
+    #wrap.small #topActionButtons .actions.open ul li .btn:hover{
+        background-color: #0072C6
+    }
+
+    #topActionButtons .actions.open ul li .btn.pl0{
+        padding-left: 10px !important
+    }
+    
+    #wrap.medium #dirNav a , #wrap.small #dirNav a{
+        word-break: break-all;
+        word-wrap: break-word;
+        width: 100px;
+        text-overflow: ellipsis
+    }
+    
+    .sortmain .filenames, .sortmain .filetypes, .sortmain .filedates, .sortmain .filesizes{
+        width: 60px;
+    }
+    
+    .sortmain .filenames{
+        right: 186px
+    }
+
+}
+
+@media (max-width: 843px){
+
+    #wrap.small #topActionButtons .actions.open ul.dropdown-menu{
+        padding: 0 !important;
+    }
+    #wrap.small #topActionButtons .actions.open ul li{
+        float: none;
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+    }   
+
+    #topActionButtons .upsection{
+        margin-left: 0;
+    }
+    /*Search*/
+/*    .searchbtnli{
+        float: none !important;
+        margin-left: 0 !important;
+    }
+    #searcher {
+        margin: 0;
+        display: block;
+        position: relative;
+        height: 60px;
+        padding: 0;
+        width: 100%;  
+        float:none;
+        clear: left;
+        top: 0;
+        right: 0;
+    }
+
+    #searcher form{
+        width: auto;
+        min-width: 60px;
+        height: 60px;
+        position: relative;
+        z-index: 2;
+    }*/
+
+    #searcher input[type="text"] {
+        width: 100%;
+        z-index: 1;
+    }
+
+    #searcher input[type="text"]:focus:hover {
+        border-bottom: 1px solid #BBB;
+    }
+
+    #searcher input[type="text"]:focus {
+        width: 100%;
+        z-index: 1;
+        border-bottom: 1px solid #BBB;
+        cursor: text;
+    }
+
+    #searcher input[type="submit"]:hover {
+        opacity: 0.8;
+    }  
+    
+    .directoryList > li{
+        position: relative;
+        height: 222px;
+    }
+    
+    .tnfileSize{
+        font-size: 12px;
+    }
+}
+@media (max-width: 480px) {
+
+    #sidebar{
+        z-index: 1003;
+    }
+
+    body.sidebar-on #wrap{
+        margin-left: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    #footer.wrapped{
+        left: 0;
+    }
+    #topActionButtons{
+        background-color: #3B5998;
+    }
+    #topActionButtons .upsection{
+        margin-left: 0;
+    }
+    
+    li#filecheck .popover-content{
+        height: 23px;
+        padding-top: 3px
+    }
+
+    .empty-directory h2{
+        margin-left: -40px
+    }
+    .sidebar-on .filesHeading{
+        margin-left: 0;
+    }
+    .filesHeading .phone{
+        line-height: 36px;
+        padding: 0 10px
+    }
+    
+    .lld{
+        border-color: #4F71BA
+    }
+    .filesHeading{
+        height: 37px;
+    }    
+}
+@media (max-width: 767px) {
+
+html{
+    height: 100%;
+    max-height: 100%;
+    overflow-x: hidden !important;
+}    
+    body{
+        overflow-x: hidden !important;
+        overflow-y: auto;
+        background-color: #fff;
+    }
+  
+    .navbar{
+        min-height: 25px;
+    }
+
+    #wrap{
+        margin-left: 0;
+        left: 0;
+        overflow: visible;
+        min-height: 100%;
+        width: 100%;
+    }
+    #footer{
+        /*position: relative*/
+    }
+    .main{
+        margin-left: 0;
+        overflow: visible;
+        min-height: 100%;         
+    }
+    .view_port{
+        margin-left: 0;
+        overflow: visible;
+        height: 100%;
+        min-height: 100%;        
+    }
+
+
+    section.main{
+        margin: 0;
+    }
+
+    body.sidebar-on #wrap{
+        overflow: hidden;
+    }
+
+    #footer{
+        transition: bottom 0.2s ease-in-out;
+    }
+    #footer.down{
+        bottom: -30px;
+    }
+    /*Sidebar*/
+    #sidebar{
+        top: 0;
+        left: 0;
+        bottom: 0;
+        position: fixed;
+        transition: bottom 0.2s ease-in-out;
+    }
+    
+    body.sidebar-on #sidebar{
+        bottom: 0;
+        top: 0
+    }
+    
+    #mainIndicator{
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        background: #646C90;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    #sidebar .panel-heading{
+        padding-top: 4px
+    }
+    #sidebar .logo{
+        background-size: auto auto;
+        background-origin: content-box;
+        background-position-y: 0
+    }
+
+    #sidebar .panel-body{
+        top: 0
+    }
+    /*logo*/
+    #sidebar .panel-heading img{
+        height: 43px;
+    }
+
+    #sidebarOpener{
+        display: block;
+    }
+
+    #sidebarOpener.off{
+        display: none;
+    }
+
+    #sideBarTree{
+        font-size: 15px;
+        line-height: 2.1
+    }
+
+    /*tree scroll problem fix on touchable devices assumed max 768px width*/
+
+    #dirTree{
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .statPull{
+        margin-right: -52px;
+        border-radius: 4px;
+        bottom: auto;
+        top: 5px;                
+    }
+
+    /*viewport*/
+
+    body.sidebar-on section.main{
+        opacity: 0.2;
+        z-index: 1;
+
+    }
+
+    .mask{
+        z-index: 1002;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: none;
+        background: transparent none;
+    }
+    
+    body.sidebar-on .mask{
+        display: block;
+    }    
+
+    .view_port{
+        margin-top: 92px;
+    }    
+
+    .view_port.view_port_fixed{
+        position: relative;
+        top: 0;
+    }
+
+    #list{
+        position: relative;
+        background-color: transparent;
+        padding: 0;
+    }    
+
+    #topActionButtons{
+        padding: 0;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 91;
+    }
+    #topActionButtons ul.actions li{
+        height: auto;
+    }
+    #topActionButtons .filesHeading .btn.btn-xs{
+        padding: 1px 5px;
+    }
+
+    #topActionButtons .upsection{
+        margin-left: 0;
+        border-color: #4F71BA;
+    }    
+
+
+    .filesHeading, .actionsHeading{
+        z-index: 2;
+    }
+    
+    .fileupload-progress{
+        left: 0
+    }
+
+    li#filecheck, li.phone{
+        float: left;
+        height: 36px;
+        line-height: 36px;
+    }
+    .filesHeading{
+        height: 40px;
+        padding-top: 0
+    }       
+    .filesHeading .phone .dropdown-menu .fheading > a{
+        background-position: right -64px;
+    }
+    
+    .filesHeading li.wide > ul > li, .filesHeading li.medium > ul > li, li#filecheck, li.phone{
+        height: 36px;
+        line-height: 36px;
+    }
+    
+    #dirNav{
+        line-height: 36px;
+        top: 0;
+    }
+
+    /*items*/
+    .directoryList{
+        padding-bottom: 50px;
+    }
+    .directoryList.thumb > li, #wrap.wide .directoryList.thumb > li, #wrap.medium .directoryList.thumb > li{
+        /*width: 144px;*/
+        height: 162px;
+        /*margin: 4px 3px;*/
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;   
+        border: 1px solid transparent;
+        font-size: 14px;
+        border-bottom-color: rgba(255,255,255,0.1);
+        background: transparent;
+        padding: 0;
+        /*margin: 0 4% 10px 4%;*/
+        padding: 1px;
+    }
+
+    .directoryList.list > li{
+        width: 96%;
+    }
+
+    .directoryList.thumb > li:hover, .directoryList.thumb > li:focus, .directoryList.thumb > li.context-active, .directoryList.thumb > li.selected{
+        background: transparent;
+        box-shadow: none;
+        border: 1px solid transparent;
+        border-bottom-color: transparent;
+        color: #fff;
+        padding: 1px;
+    }
+
+    .directoryList.thumb > li.selected{
+        border: 1px solid rgba(255,255,255,0.1);
+        background: rgba(255,255,255,0.1);
+    }
+    
+    .vpsve{
+        top: 0;
+    }
+
+    .tnFileHeading{
+        width: 100%;
+        border: none;
+        position: relative
+    }
+    .directoryList.list > li .tnFileHeading{
+        margin-right: 80px;
+        float: none;
+    }
+    .tnFilename span.editName{
+        display: inline-block;
+    }
+    .tnFileHeading input{
+        width: 32px;
+        height: 20px;
+        margin-top: 0;
+        margin-right: 3px;
+        opacity: 1
+    }    
+    .tnFilename .popover-title{
+        color: #999
+    }
+    .directoryList.thumb > li .tnFilename{
+        max-width: 80%
+    }
+    .directoryList.list > li .tnFilename{
+        width: 68%;
+    }
+    .tnFileTopButtons{
+        top: -2px;
+        line-height: 20px;
+        height: 20px;
+    }
+    .fileMoreButton, .fileMoreButton:hover, .fileMoreButton:active,.fileMoreButton:focus, .fileInfoButton{
+        width: 32px !important;
+        height: 32px !important;
+        visibility: visible;
+        transition-delay:0s;
+        opacity: 1;
+        box-shadow: none;
+        line-height: 22px;
+        font-size: 26px;
+        text-align: center;
+        vertical-align: top;
+        background-color: inherit;
+        border: none;
+    }
+    .directoryList > li:hover .fileInfoButton,
+    .directoryList > li.context-active .fileInfoButton,
+    .fileInfoButton{
+        display: none !important;
+    }
+    .fileMoreButton:hover, .fileMoreButton:active{
+        color: inherit;
+        
+    }
+    
+    .context-active .fileMoreButton{
+        background-color: inherit
+    }
+
+    .tnpreviewDesc{
+        width: 130px;
+        left: 0;
+        right: 0;
+        display: none;
+    }
+
+    .tnpreviewImageContainer{
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        display: table;
+    }    
+
+    .directoryList.list > li .tnpreviewImageContainer{
+        float:none;
+        right: 0;
+        width: 60px;
+    }
+    .tnpreviewImage, .tnpreviewBottomBar, .rpsve, .vpsve, .octet{ 
+        width: 100%;
+        height: 100px;
+        top: 0
+    }
+    .tnpreviewImage{
+        position: relative
+    }
+
+    .tnpreviewBottomBar{
+        border-top: none;
+    }
+
+    .qplayMedia{
+        display: none;
+    }
+
+    .tnpreviewImage.image{
+        background-image:  url(../img/image.mb.gif)
+    }
+    .tnpreviewImage.video{
+        background-image:  url(../img/video.mb.gif)
+    }
+    .tnpreviewImage.audio{
+        background-image:  url(../img/audio.mb.gif)
+    }
+    .tnpreviewImage.document{
+        background-image:  url(../img/document.mb.gif)
+    }
+    .tnpreviewImage.other{
+        background-image:  url(../img/other.mb.gif)
+    }
+    
+    .tnpreviewImage i.protected{
+        font-size: 36px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -36px;
+        margin-top: -8px;
+        z-index: 5
+    }
+    .tnpreviewBottomBar{
+        height: 24px;
+        /*position: absolute;*/
+        bottom: 0;
+        /*top: auto;*/
+        background: none;
+        padding-right: 0;
+    }
+    #loadAllItems{
+        font-size: 13px;
+    }
+    #footer{
+        left: 0;
+    }
+    #footer > .navbar-inner > .container-fluid{
+        padding-right: 2px;
+    }
+    #footer .container-fluid .bottom{
+        padding-left: 0
+    }
+    
+    #vobox-caption .midaction{
+        left: auto;
+        right: 60px
+    }
+    
+    #moreItemLoader{
+        bottom: 20px
+    }
+    
+    .fdropdownActions, .context, #context-layer{
+        z-index: 9999 !important
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    
+    #vobox-caption .midaction{
+        width: auto;  
+        margin-left: 0;
+        right: 58px;
+    }
+    #vobox-caption ul > li a{
+        padding-left: 9px;
+        padding-right: 9px
+    }
+    #vobox-caption .nav.closenav{
+        margin-right: -15px;
+    }
+    
+    #vobox-caption .navbar-inner .actions a span{
+        display: none
+    } 
+    #vobox-title{
+        max-width: 120px;
+    }
+
+}

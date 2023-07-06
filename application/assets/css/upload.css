@@ -1,0 +1,12 @@
+/* 
+    Document   : default
+    Created on : Dec 9, 2013, 9:21:19 PM
+    Author     : Xneda
+    Description:
+        The default css for CLOSHARE elements -> go by random.
+*/
+
+#upToolp>a{
+   color: #CCC;
+   cursor: default
+}

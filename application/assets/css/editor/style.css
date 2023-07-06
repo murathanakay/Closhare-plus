@@ -1,0 +1,447 @@
+/* editor's general field */
+.veditor {
+    height: auto !important;    
+}
+.veditor * {
+}
+.veditor_focused {
+    border-color: #999999;
+    box-shadow: 3px 3px 0 rgba(12, 12, 12, 0.05)
+}
+/* toolbar */
+.veditor_toolbar {
+    overflow:auto;
+    padding: 0;
+    background:#EEE;
+    border-bottom:#BBB 1px solid;
+}
+.veditor_tool {
+    float:left;
+    margin:0;
+    padding:8px;
+    cursor:pointer;
+}
+.veditor_tool, .veditor_tool_icon, .veditor_tool_label {
+    border: none;
+    border-radius:0;
+    color: #777
+}
+.veditor_hiddenField {
+    display:none
+}
+.veditor_tool_icon {
+    display:block;
+    width:22px;
+    height:22px;
+    background:url('../../img/editor.png') no-repeat
+}
+.veditor_tool a, .veditor_tool a:link, .veditor_tool:active{
+    color: #666;
+}
+.veditor_tool.veditor_tool_1 .veditor_tool_label {
+    position:relative;
+    display:block;
+    padding:3px;
+    width:70px;
+    height:16px;
+    overflow:hidden;
+}
+.veditor_tool.veditor_tool_1 .veditor_tool_text {
+    font:bold 13px Arial,sans-serif;
+    color:#222;
+}
+.veditor_tool.veditor_tool_1 .veditor_tool_icon {
+    position:absolute;
+    top:10px;
+    right:2px;
+    width:6px;
+    height:4px;
+    background-position:-19px -23px;
+    border:none;
+    border-radius:none; -webkit-border-radius:none; -moz-border-radius:none
+}
+.veditor_tool.veditor_tool_2 .veditor_tool_icon {
+    background-position:0 0
+}
+.veditor_tool.veditor_tool_3 .veditor_tool_icon {
+    background-position:-22px 0
+}
+.veditor_tool.veditor_tool_4 .veditor_tool_icon {
+    background-position:-44px 0
+}
+.veditor_tool.veditor_tool_5 .veditor_tool_icon {
+    background-position:-66px 0
+}
+.veditor_tool.veditor_tool_6 .veditor_tool_icon {
+    background-position:-88px 0
+}
+.veditor_tool.veditor_tool_7 .veditor_tool_icon {
+    background-position:-110px 0
+}
+.veditor_tool.veditor_tool_8 .veditor_tool_icon {
+    background-position:-132px 0
+}
+.veditor_tool.veditor_tool_9 .veditor_tool_icon {
+    background-position:-154px 0
+}
+.veditor_tool.veditor_tool_10 .veditor_tool_icon {
+    background-position:-176px 0
+}
+.veditor_tool.veditor_tool_11 .veditor_tool_icon {
+    background-position:-198px 0
+}
+.veditor_tool.veditor_tool_12 .veditor_tool_icon {
+    background-position:-220px 0
+}
+.veditor_tool.veditor_tool_13 .veditor_tool_icon {
+    background-position:-242px 0
+}
+.veditor_tool.veditor_tool_14 .veditor_tool_icon {
+    background-position:-264px 0
+}
+.veditor_tool.veditor_tool_15 .veditor_tool_icon {
+    background-position:-286px 0
+}
+.veditor_tool.veditor_tool_16 .veditor_tool_icon {
+    background-position:-308px 0
+}
+.veditor_tool.veditor_tool_17 .veditor_tool_icon {
+    background-position:-330px 0
+}
+.veditor_tool.veditor_tool_18 .veditor_tool_icon {
+    background-position:-352px 0
+}
+.veditor_tool.veditor_tool_19 .veditor_tool_icon {
+    background-position:-374px 0
+}
+.veditor_tool.veditor_tool_20 .veditor_tool_icon {
+    background-position:-396px 0
+}
+.veditor_tool.veditor_tool_21 .veditor_tool_icon {
+    background-position:-418px 0
+}
+.veditor_tool:hover {
+    background-color:#FFF;
+    border-color:#FFF
+}
+.veditor_tool:hover .veditor_tool_icon, .veditor_tool:hover .veditor_tool_label {
+    border:#AAA 1px solid
+}
+.veditor_tool:active .veditor_tool_icon, .veditor_tool:active .veditor_tool_label {
+    border:#777 1px solid
+}
+.veditor_tool.veditor_tool_1:hover .veditor_tool_icon, .veditor_tool.veditor_tool_1:active .veditor_tool_icon {
+    border:none
+}
+.veditor_tool_depressed {
+    background-color:#DDD;
+    border-color:#CCC
+}
+.veditor_tool_depressed .veditor_tool_icon {
+    border-color:#AAA
+}
+.veditor_tool_depressed:hover {
+    background-color:#EEE
+}
+/* link form area */
+.veditor_linkform {
+    padding:5px 10px;
+    background:#DDD;
+    border-bottom:#BBB 1px solid;
+}
+.veditor_linktypeselect {
+    position:relative;
+    float:left;
+    width:130px;
+    background:#EEE;
+    cursor:pointer
+}
+.veditor_linktypeselect:Active {
+    background:#FFF
+}
+.veditor_linktypeview {
+    padding:3px 5px;
+    border:#333 1px solid;
+    color:#777;
+    border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px;
+    outline:none
+}
+.veditor_linktypetext {
+    font-size:12px;
+}
+.veditor_linktypearrow {
+    position:absolute;
+    bottom:8px; right:6px;
+    width:7px;
+    height:6px;
+    margin:0 auto;
+    background:url('../../img/editor.png') -7px -23px no-repeat;
+}
+.veditor_linktypes {
+    display:none;
+    position:absolute;
+    top:22px; left:1px;
+    width:125px;
+    background:#FFF;
+    border:#333 1px solid;
+    box-shadow:0 1px 4px #AAA; -webkit-box-shadow:0 1px 4px #AAA; -moz-box-shadow:0 1px 4px #AAA
+}
+.veditor_linktypes a {
+    display:block;
+    padding:4px 5px;
+    font-size:12px;
+}
+.veditor_linktypes a:hover {
+    background:#DDD
+}
+.veditor_linkinput {
+    float:left;
+    margin:0 5px;
+    padding:3px 5px;
+    width:300px;
+    background:#EEE;
+    border:#333 1px solid;
+    color:#777;
+    font-size:12px;
+    border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px;
+    outline:none;
+}
+.veditor_linkinput:focus, .veditor_linkinput:hover {
+    background:#FFF;
+    border-color:#000;
+}
+.veditor_linkbutton {
+    float:left;
+    padding:3px 12px;
+    background:#AAA;
+    border:#333 1px solid;
+    color:#FFF;
+    font-size:12px;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px;
+    box-shadow:inset 0 1px #EEE; -webkit-box-shadow:inset 0 1px #EEE; -moz-box-shadow:inset 0 1px #EEE;
+}
+.veditor_linkbutton:hover {
+    background:#A1A1A1
+}
+.veditor_linkbutton:active {
+    box-shadow:inset 0 1px #CCC; -webkit-box-shadow:inset 0 1px #CCC; -moz-box-shadow:inset 0 1px #CCC;
+    background:#888;
+}
+
+/* text format menu */
+.veditor_formats {
+    display:none;
+    position:absolute;
+    width:180px;
+    oveflow-x:hidden;
+    overflow-y:auto;
+    background:#FFF;
+    border:#AAA 1px solid;
+    box-shadow:0 0 5px #AAA; -webkit-box-shadow:0 0 5px #AAA; -moz-box-shadow:0 0 5px #AAA;
+    z-index:100;
+}
+.veditor_format {
+    display:block;
+    padding:4px 7px;
+    font-size:13px
+}
+.veditor_format:hover {
+    background:#DDD
+}
+.veditor_format_1, .veditor_format_2, .veditor_format_3, .veditor_format_4, .veditor_format_5, .veditor_format_6 {
+    font-weight:bold
+}
+.veditor_format_1 {
+    font-size:22px
+}
+.veditor_format_2 {
+    font-size:20px
+}
+.veditor_format_3 {
+    font-size:18px
+}
+.veditor_format_4 {
+    font-size:16px
+}
+.veditor_format_5 {
+    font-size:14px
+}
+.veditor_format_6 {
+    font-size:12px
+}
+.veditor_format_7 {
+    font-family:"Courier New", Courier, monospace
+}
+
+/* font size menu */
+.veditor_fontsizes {
+    display:none;
+    position:absolute;
+    width:180px;
+    height: 120px;
+    oveflow-x:hidden;
+    overflow-y:auto;
+    background:#FFF;
+    border:#AAA 1px solid;
+    box-shadow:0 0 5px #AAA; -webkit-box-shadow:0 0 5px #AAA; -moz-box-shadow:0 0 5px #AAA;
+    z-index: 3;
+}
+.veditor_fontsize {
+    display:block;
+    padding:3px 7px;
+}
+.veditor_fontsize:hover {
+    background:#DDD
+}
+
+/* color pallette */
+.veditor_cpalette {
+    display:none;
+    position:absolute;
+    padding:6px;
+    width:144px;
+    background:#FFF;
+    border:#AAA 1px solid;
+    box-shadow:0 0 5px #AAA; -webkit-box-shadow:0 0 5px #AAA; -moz-box-shadow:0 0 5px #AAA;
+    z-index: 3;
+}
+.veditor_color {
+    display:block;
+    float:left;
+    width:16px;
+    height:16px;
+    border:#FFF 1px solid;
+}
+.veditor_color:hover {
+    border-color:#000
+}
+.veditor_colorSeperator {
+    float:none;
+    clear:both;
+    height:7px;
+}
+
+/* editor area */
+.veditor_editor, .veditor_source {
+    padding:10px;
+    background:#FFF;
+    min-height:100px;
+    max-height:350px;
+    overflow:auto;
+    outline:none;
+    word-wrap:break-word; -ms-word-wrap:break-word;
+    resize:vertical;
+    text-align: start;
+    line-height: normal;
+}
+.veditor_editor div, .veditor_editor p {
+    margin:0 0 7px
+}
+.veditor_editor a:link, .veditor_editor a:link * {
+    color:#0066FF !important;
+    text-decoration:underline;
+}
+.veditor_editor blockquote {
+    margin-top:0;
+    margin-bottom:7px
+}
+.veditor_editor img {
+    float:left;
+    margin:0 10px 5px 0
+}
+.veditor_editor a[veditor-setlink], .veditor_editor a[veditor-setlink] * {
+    background:#3297FD !important;
+    color:#FFF !important
+}
+.veditor_editor h1, .veditor_editor h2, .veditor_editor h3, .veditor_editor h4, .veditor_editor h5, .veditor_editor h6, .veditor_editor pre {
+    display:block;
+    margin:0 0 3px;
+}
+.veditor_editor h1, .veditor_editor h1 * {
+    font-size:26px
+}
+.veditor_editor h2, .veditor_editor h2 * {
+    font-size:24px
+}
+.veditor_editor h3, .veditor_editor h3 * {
+    font-size:22px
+}
+.veditor_editor h4, .veditor_editor h4 * {
+    font-size:20px
+}
+.veditor_editor h5, .veditor_editor h5 * {
+    font-size:18px
+}
+.veditor_editor h6, .veditor_editor h6 * {
+    font-size:15px
+}
+.veditor_editor pre, .veditor_editor pre * {
+    font-family:"Courier New", Courier, monospace
+}
+
+/* source area */
+.veditor_source, .veditor_source textarea {
+    background:#FFF1E8
+}
+.veditor_source textarea {
+    margin:0 !important;
+    padding:0 !important;
+    display:block !important;
+    width:100% !important;
+    min-height:100px;
+    font-family:Courier, Arial, sans-serif !important;
+    font-weight:normal;
+    font-size:15px;
+    overflow:hidden !important;
+    outline:none;
+    resize:none;
+}
+.veditor_source textarea, .veditor_source textarea:focus {
+    css_shadow:none !important;
+    background:none !important;
+    border:none !important;
+}
+
+/* title box */
+.veditor_title {
+    display:none;
+    position:absolute;
+    z-index:9999;
+}
+.veditor_titleArrow {
+    position:relative;
+}
+.veditor_titleArrowIcon {
+    width:7px;
+    height:6px;
+    margin:0 auto;
+    background:url('../../img/editor.png') 0 -23px no-repeat;
+}
+.veditor_titleText {
+    padding:5px 7px;
+    margin-top:0;
+    min-width:5px;
+    min-height:1px;
+    max-width:400px;
+    background:#000;
+    border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px;
+    word-wrap:break-word; -ms-word-wrap:break-word
+}
+.veditor_titleText, .veditor_titleText * {
+    color:#FFF;
+    font-size:11px
+}
+
+/* placeholder */
+.veditor_placeholder {
+    position:relative;
+}
+.veditor_placeholder_text {
+    position:absolute;
+    top:43px;
+    left:10px;
+    font-size:14px;
+    color:#CCC;
+}

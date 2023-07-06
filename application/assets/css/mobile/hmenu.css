@@ -1,0 +1,29 @@
+.sbar {
+    display: none;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+    width: 260px;
+    overflow-x: none;
+    overflow-y: auto;
+    background: #f8f8f8;
+    -webkit-box-shadow: inset 0 0 5px 5px #ebebeb;
+    -moz-box-shadow: inset 0 0 5px 5px #ebebeb;
+    box-shadow: inset 0 0 5px 5px #ebebeb;
+}
+
+.sbar .sbar-inner {
+    padding: 0 0 15px;
+}
+
+.sbar.right {
+    left: auto;
+    right: -240px;
+}
+
+.sbar.left {
+    left: -240px;
+    right: auto;
+}

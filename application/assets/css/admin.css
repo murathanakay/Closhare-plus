@@ -1,0 +1,123 @@
+/* 
+    Created on : May 23, 2014, 12:26:09 AM
+    This file is part of Closhare+plus
+/*
+#################################################################################################################################################################################### User list, Settings etc... ########################################################################################################################################################################################################################################################################################################*/
+.modal-title{
+    position: relative;
+}
+
+#box_page #headcontrol{
+    float: right;
+    margin: -5px 20px 0 0;
+}
+
+#box_page table tbody tr{
+    position: relative;
+}
+#headcontrol{
+    float: right;
+    margin-top: -6px;
+    margin-right: 25px;
+}
+.uitoolbar, .uisearcher{
+    float: right;
+}
+.uisearcher{
+    position: relative;
+    margin-right: 20px;
+}
+.uisearcher .form-inline .form-group{
+    margin-right: 0;
+}
+.uisearcher button#uisearchuserbtn{
+    position: absolute;
+    top: 3px;
+    right: 2px;
+}
+.uisearcher #uisearchreset{
+    position: absolute;
+    right: 42px;
+    padding-right: 0; 
+    display: none;   
+    top: 14px;
+}
+#uinotify{
+/*    position: absolute;
+    left: 0;
+    top: 0;*/
+}
+.uipermissions{
+    border-bottom: 1px solid transparent;
+}
+/*Settings, profile*/
+#page_settings .tab-content{
+    padding: 0 10px 0 0;
+    overflow: hidden;
+    height: 300px;
+    overflow-y: auto;
+}
+#page_settings .tabbable{
+    padding-top: 10px
+}
+#page_settings .well{
+    padding: 7px;
+    margin: 0;
+}
+#page_settings .crt{
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #FFF;
+    border-radius: 100%;
+    border: 1px solid #EEE;
+    font-size: 1.5em;
+    color: #ddd;
+    position: absolute; 
+    right: -2px;
+    
+}
+#page_settings .form-group > label{
+    padding-left: 0;
+    position: relative;
+    line-height: 24px;
+    font-size: 13px;
+}
+#page_settings .form-horizontal .control-label{
+    padding-top: 4px;
+    line-height: 20px
+}
+.form-icon{
+    background-color:  #FFF;
+    border-right: 1px solid #FAFAFA;
+}
+
+.removeBgBtn{
+    position: absolute;
+    font-size: 18px;
+    top: 20px;
+    right: 20px;
+    text-shadow: 1px 0 0 rgba(0,0,0,0.7)
+}
+
+@media (max-width: 480px) {
+    
+#box_page #headcontrol{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}    
+.uisearcher{
+    margin-top: 5px;
+    margin-right: 0;
+    width: 90%;
+}
+#headcontrol{
+    float: right;
+    margin-top: -25px;
+    margin-right: 25px;
+}
+    
+}
