@@ -1,0 +1,5 @@
+# .htacess para desenvolver o site no nosso servidor de testes da Neo Solutions
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+ #</IfModule>
