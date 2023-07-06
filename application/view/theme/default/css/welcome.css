@@ -1,0 +1,243 @@
+@import url('opensans.css');
+html{
+    min-height: 100%;
+}
+body {
+    font: 13px "Open Sans", Arial,Helvetica,sans-serif;
+    overflow: auto;
+    height: 100%;
+    background: url(../images/bg.png) repeat-x left top;
+    transition: opacity ease-in 0.4s
+}
+a, a:active, button, button:focus, .btn:focus{ 
+    outline: 0 !important; 
+    text-decoration: none !important
+}
+#goUp{
+   display: none;
+}
+#page{
+    position: relative;
+    background:  transparent;
+    /*border: 1px solid #fafafa;*/
+    padding: 10px
+}
+#wrap > .container {
+    padding-top: 10px;
+}
+.welcome-container {
+    background-color: transparent;
+    overflow-x: hidden;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
+    background-size: auto auto;
+    height: 100%;
+}
+#push,
+#footer {
+    height: 30px;
+    min-height: 30px;
+    left: 0;
+    color: #666;
+}
+#footer .container-fluid .bottom {
+    padding: 10px 0;
+    font-size: 92%;
+    margin-right: 11px;  
+}
+#form-login, #form-register {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 40px;
+}
+#login{
+    /*margin-top: -40px;*/
+}
+#login_form, #register_form, #reset_form {
+    margin-bottom: 0;
+    position: relative;
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    float: none;    
+}
+#reset_form{
+    border: none;
+}
+
+#form-login .tab-content{
+    background-color: #eee;
+    overflow: hidden;
+    padding: 40px 15px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px
+}
+#form-login .form-control{
+    height: 40px;
+    font-size: 14px
+}
+#form-login .callout{
+    margin: 0 0 10px 0
+}
+#form-login .has-feedback .form-control-feedback{
+    line-height: 40px;
+    height: 40px;
+    top: 0;
+}
+#user-post-box-lrr{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 3px
+}
+#user-post-box-lrr > li > a{
+    border-radius: 10px;
+}
+#user-post-box-lrr > li > a:hover{
+    border-bottom: 2px solid #CCC
+}
+#user-post-box-lrr > li.active > a, #user-post-box-lrr > li.active > a:hover{
+    border-bottom: 2px solid #5c6070;
+    background-color: #787E91;
+}
+.captcha{
+    float: right;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0 2px;
+    position: relative;
+    background-color: rgba(255,255,255,0.99);
+}
+.captcha i{
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    font-size: 14px;
+}
+.social{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 40px;;
+    padding-top: 20px;
+    background: #EAEAEA url(../images/hshadow.png) center bottom no-repeat;
+    margin-bottom: 15px;
+    
+}
+.social .btn{
+    vertical-align: bottom;
+    text-align: left;
+    font-weight: 700;
+}
+.social .btn i{
+    font-size: 2em;
+    margin-top: 0px;
+    line-height: 40px;
+}
+.social .btn span{
+    height: 40px;
+    line-height: 40px;
+    vertical-align: top;
+    display: inline-block;
+}
+#resetNotify{
+    position: relative;
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+    #form-login {
+        margin: 0 auto;
+        float: none;
+        position: relative;
+        z-index: 500
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1199px) {
+    #form-login {
+        margin: 0 auto;
+        float: none;
+    }
+
+    #form-login .control-label {
+        width: 110px;
+    }
+
+    #form-login .controls {
+        margin-left: 130px;
+    }
+}
+
+@media (min-width: 768px) {   
+#login_form.span7:after, #register_form.span7:after{
+    border-left: 1px solid #CCC;
+    background-color: #FFFFFF;
+    content: "OR";
+    right: -10px;
+    position: absolute;
+    top: 44%;   
+    border:none;    
+}
+#login_form.span7, #register_form.span7{
+    border-right: 1px solid #CCCCCC;
+    padding-right: 40px;
+    
+}
+#reset_form{
+    border: none;
+}
+
+    
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and(max-width: 768px) {
+    input[type='text'],input[type='number'],textarea {
+        font-size:16px !important;
+    }
+    #wrap {
+        margin-top: 50px !important;
+    }  
+    #form-login .tab-content{
+        padding-right: 10px
+    }     
+    #form-login .control-label {
+        width: 50px;
+    }
+
+    #form-login .controls {
+        margin-left: 70px;
+    }   
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    #wrap {
+        margin-top: 10px !important;
+    }
+    #login_form, #register_form, #reset_form {
+        width: 100%;
+    }   
+    #form-login ul > li > a{
+        padding: 10px 10px;
+    }
+    #form-login .tab-content{
+        padding-right: 10px;
+        padding-left: 10px
+    }     
+    .social{
+        text-align: left;
+        padding-left: 0;
+        clear: both;
+        float: none;
+    }
+    .social .header{
+        margin-left: 0;
+    }
+}
