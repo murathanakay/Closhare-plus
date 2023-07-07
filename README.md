@@ -14,7 +14,7 @@ a basic file management system with additional specs plus to closhare project.
 
 ## Getting Started <a name = "getting_started"></a>
 
-This an <b>old</b> project which was written from the scatchv with PHP 5.6
+This an <b>old & unmaintained</b> project which was written from the scatchv with PHP 5.6
 
 ### Info
 
